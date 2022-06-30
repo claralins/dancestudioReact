@@ -10,7 +10,7 @@ function RenderVideo() {
       <video src="/assets/video/street-ballet.mov" width="100%" loop autoplay />
       <div class="overlay">
         <p className="text-center">
-          Let's achieve your goals,{" "}
+          Let's achieve your goals,
           <span className="vid-header-color">together</span>.
         </p>
       </div>
