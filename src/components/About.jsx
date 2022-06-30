@@ -5,30 +5,24 @@ import { Card, CardBody, CardTitle, CardImg } from "reactstrap";
 const About = () => {
   return (
     <div>
-      <div className="container">
+      <div className="container about-container">
         <div className="row">
-          <div className="col-sm-6">
-            <h3>Who we are</h3>
+          <div className="col-sm-4">
+            <h3 className="about-header text-center">Who we are</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
-              placeat reiciendis, voluptates reprehenderit sit esse, minima
-              maiores veniam ipsa, odio officiis id magnam. Facere fuga deserunt
-              exercitationem saepe? Aut, minima. Lorem ipsum dolor sit amet,
-              consectetur adipisicing elit. Consectetur ipsam nulla eaque
-              facere, molestiae doloremque quam rem ab quisquam aliquid totam
-              iusto provident. Fuga nemo mollitia praesentium accusamus atque
-              hic.
+              Hi! I'm Clara Lins, a brazilian Frontend Developer based in
+              Virginia and soon moving to California. I created this website
+              using my knowledge of{" "}
+              <strong>HTML, CSS, Bootstrap and React</strong>.
+            </p>
+            <p>
+              This website was created for a fictional business for learning
+              purposes only; none of the products and services displayed here
+              are actually offered.
             </p>
           </div>
-          <div className="col-sm-6">
-            <Card>
-              <CardTitle>
-                <h3>Dance</h3>
-              </CardTitle>
-              <CardBody>
-                <CardImg src="/assets/img/beach.jpg"></CardImg>
-              </CardBody>
-            </Card>
+          <div className="col-sm-8">
+            <img className="about-img" src="/assets/img/beach.jpg" />
           </div>
         </div>
       </div>

@@ -5,12 +5,14 @@ import Classes from "./ClassesComponent";
 import ClassInfo from "./ClassesInfoComponent";
 import Plans from "./PlansComponent";
 import PlanInfo from "./PlansInfoComponent";
+import TeachersComponent from "./TeachersComponent";
 import About from "./About";
 import Contact from "./Contact";
 import Footer from "../components/FooterComponent";
 import { Switch, Route, Redirect } from "react-router-dom";
 import { AULAS } from "../shared/classes";
 import { PLANS } from "../shared/plans";
+import { TEACHERS } from "../shared/teachers";
 
 class Main extends Component {
   constructor(props) {
@@ -18,6 +20,7 @@ class Main extends Component {
     this.state = {
       aulas: AULAS,
       plans: PLANS,
+      teachers: TEACHERS,
     };
   }
   render() {
@@ -66,6 +69,11 @@ class Main extends Component {
             render={() => <Plans plans={this.state.plans} />}
           />
           <Route path="/plans/:planId" component={PlanWithId} />
+          <Route
+            exact
+            path="/team"
+            render={() => <TeachersComponent teachers={this.state.teachers} />}
+          />
           <Route path="/aboutus" component={About} />
           <Route path="/contactus" component={Contact} />
           <Redirect to="/home" />

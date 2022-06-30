@@ -6,7 +6,6 @@ import {
   NavbarBrand,
   Collapse,
   NavItem,
-  Jumbotron,
 } from "reactstrap";
 import { NavLink } from "react-router-dom";
 
@@ -24,53 +23,53 @@ class Header extends Component {
   render() {
     return (
       <React.Fragment>
-        <Jumbotron fluid>
-          <div className="container">
-            <div className="row">
-              <div className="col">
-                <h1>Movemento studio</h1>
-              </div>
-            </div>
-          </div>
-        </Jumbotron>{" "}
-        <Navbar sticky="top" expand="md" className="navbar">
+        <Navbar sticky="top" expand="md" className="navbar" dark>
           <div className="container">
             {" "}
-            <NavbarBrand className="mr-auto">
+            <NavbarBrand className="mr-auto nav-header" href="/">
               <img
                 src="/assets/img/logo.png"
-                height="30"
-                width="30"
+                height="50"
+                width="50"
                 alt="studio logo"
+                className="logo"
               />
               Movemento Studio
             </NavbarBrand>
-            <NavbarToggler onClick={this.toggleNav} />
+            <NavbarToggler
+              onClick={this.toggleNav}
+              className="navbar-toggler"
+            />
             <Collapse isOpen={this.state.isNavOpen} navbar>
-              <Nav navbar className="nav">
+              <Nav navbar className="ml-auto">
                 <NavItem className="nav-item">
                   <NavLink className="nav-link" to="/home">
-                    <i className="fa fa-home fa-lg">Home</i>
+                    Home
                   </NavLink>
                 </NavItem>
                 <NavItem className="nav-item">
                   <NavLink className="nav-link" to="/classes">
-                    <i className="fa fa-home fa-lg">Classes</i>
+                    Classes
                   </NavLink>
                 </NavItem>
                 <NavItem className="nav-item">
                   <NavLink className="nav-link" to="/plans">
-                    <i className="fa fa-home fa-lg">Plans</i>
+                    Plans
+                  </NavLink>
+                </NavItem>
+                <NavItem className="nav-item">
+                  <NavLink className="nav-link" to="/team">
+                    Our team
                   </NavLink>
                 </NavItem>
                 <NavItem className="nav-item">
                   <NavLink className="nav-link" to="/contactus">
-                    <i className="fa fa-home fa-lg">Contact</i>
+                    Contact
                   </NavLink>
                 </NavItem>
                 <NavItem className="nav-item">
                   <NavLink className="nav-link" to="/aboutus">
-                    <i className="fa fa-home fa-lg">About Us</i>
+                    About Us
                   </NavLink>
                 </NavItem>
               </Nav>

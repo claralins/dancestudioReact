@@ -13,7 +13,7 @@ export const AULAS = [
     name: "Contemporary",
     image: "/assets/img/contemporary.jpg",
     description:
-      "Our Ballet classes are for everyone: those who are new to the art, and those who have varied levels of training and dedication.",
+      "Join us for a fusion of ballet, jazz and other modern influences in this beautiful and challenging style! Available in all levels.",
     levels: ["Beginner", "Intermediate"],
     featured: false,
   },
@@ -22,7 +22,7 @@ export const AULAS = [
     name: "Hip Hop",
     image: "/assets/img/hiphop.jpg",
     description:
-      "Our Ballet classes are for everyone: those who are new to the art, and those who have varied levels of training and dedication.",
+      "Learn Hip Hop techniques from the best instructors in the area, alongside other students and professional dancers.",
     levels: ["Beginner"],
     featured: false,
   },
@@ -31,7 +31,7 @@ export const AULAS = [
     name: "Yoga",
     image: "/assets/img/yoga1.jpg",
     description:
-      "Our Ballet classes are for everyone: those who are new to the art, and those who have varied levels of training and dedication.",
+      "Our Yoga classes are available to those who value a healthy mind-body connection and practicing mindfulness.",
     levels: ["Advanced", "Beginner"],
     featured: false,
   },

@@ -12,7 +12,7 @@ export const PLANS = [
     description:
       "Our most loved plan, the membership allows for up to 4 classes a week and exclusive perks!",
     price: "$300",
-    featured: true,
+    color: "#ffc423",
   },
   {
     id: 2,
